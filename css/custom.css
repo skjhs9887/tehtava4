@@ -1,0 +1,132 @@
+body {
+    padding-top: 70px; /* Navbarin korkeus */
+}
+
+a {
+    color: inherit; /* Säilyttää perityn tekstin värin */
+    text-decoration: underline; /* Alleviivaa kaikki linkit */
+}
+
+a:hover {
+    color: inherit; /* Varmistaa, että väri ei muutu hover-tilassa */
+    text-decoration: underline; /* Pitää alleviivauksen hover-tilassa */
+}
+
+/* Navbarin tausta */
+.navbar {
+    background-color: #155724;  
+}
+
+
+/* linkin väri */
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* aktiivisen & hover-linkin väri */
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: #000; 
+    background-color: #fff;
+}
+
+/* Hampurilaiskuvin väri */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #fff;
+}
+
+.card.bg-green {
+    background-color: #155724;
+    color: white;
+}
+
+/* Karuselli */
+.carousel {
+    width: 100%;
+    max-width: 800px; /* Maksimi leveys */
+    margin: auto; /* Keskittää karusellin */
+    position: relative; /* Tarvitaan painikkeiden sijoittelua varten */
+}
+
+.carousel-inner img {
+    max-width: 100%; /* Kuvan leveys */
+    height: auto; /* Säilyttää kuvasuhteen */
+    object-fit: cover; /* Kuvan skaalaus ilman venytystä */
+    margin: auto; /* Varmistaa, että kuvat ovat keskitettyjä */
+}
+
+/* Painikkeiden tyylit */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px; /* Haluttu leveys */
+    height: 60px; /* Haluttu korkeus */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%; /* Pyöristetyt kulmat */
+    border: 2px solid rgba(0, 0, 0, 0.3); /* Ohut reuna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjo painikkeille */
+    position: absolute; /* Asettaminen absoluuttisesti */
+    top: 50%; /* Keskitetään pystysuunnassa */
+    transform: translateY(-50%); /* Korjataan keskitys */
+}
+
+/* Vasemman puolen painike */
+.carousel-control-prev {
+    left: -80px; /* Siirretään vasemmalle ulos kuvasta enemmän */
+}
+
+/* Oikean puolen painike */
+.carousel-control-next {
+    right: -80px; /* Siirretään oikealle ulos kuvasta enemmän */
+}
+
+/* Nuolten ikonin tyylit */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px; /* Suurennetaan nuolten koko */
+    height: 30px; /* Suurennetaan nuolten korkeus */
+}
+
+/* Painikkeiden ikonit */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23155724' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23155724' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Responsiivisuus */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;     
+    } 
+}
+
+
+/* Taulukko*/
+.table-responsive {
+    max-width: 1000px; /* Aseta maksimi leveys */
+    margin: auto; /* Keskittää taulukon */
+}
+
+th {
+    background-color: #155724 !important;
+    color: white !important; 
+}
+
+
+/* Footerin tyyli */
+.footer {
+    background-color: #155724;
+    color: white;
+    padding: 10px; /* Lisää vähän tyhjää tilaa ylhäältä ja alhaalta */
+    text-align: center; /* Keskittää tekstin */
+}
+
+
+
+    

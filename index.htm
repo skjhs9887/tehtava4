@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timppa Timotei</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!--Valikko-->
+<nav class="navbar navbar-expand-sm navbar-custom p-4">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="assets/logo.jpeg" alt="Logo" style="width: 50px; height: auto;"></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#kortit" onclick="scrollToSection('kortit')">Kortit</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#karuselli" onclick="scrollToSection('karuselli')">Karuselli</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#taulukko" onclick="scrollToSection('taulukko')">Taulukko</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!--Kortit-->
+<section id="kortit">
+<div class="container mt-5">
+  <h5>Bootstrapin kortit (Card)</h5>
+    <div class="card-group">
+        <div class="card bg-green">  
+            <div class="card-body">
+                <h1 class="card-title">Kokeilua web-suunnittelun tekniikoilla</h1>
+                <p>Tällä sivulla testaan erilaisia web-suunnitteluun liittyviä tekniikoita. Valitsin pohjaksi <a href="https://www.w3schools.com/bootstrap5/bootstrap_templates.php" target="_blank">W3schoolsin Bootstrap 5 Basic Template -mallin</a>, koska halusin oppia enemmän käytännön kautta, sen sijaan että olisin käyttänyt valmiimpaa teemaa. Näin pystyn paremmin ymmärtämään, miten responsiivisuus, Bootstrap-komponentit, CSS-tyylien muokkaus ja JSON-muotoisen tiedon hakeminen ulkoiselta palvelimelta toimivat yhdessä.</p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/katti4.jpg" class="card-img-top" style="border-radius: 10% 10% 10% 10%;" alt="Kissa istuu laiturilla">"
+          </div>  
+      </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">OpenWeatherMap API</h5>
+                <p>Säädatan haku ulkoiselta palvelimelta</p>
+                <div id="saaJaala"></div>
+            </div>  
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Karuselli -->
+ <section id="karuselli">
+<div id="demo" class="carousel slide mt-5" data-bs-ride="carousel">
+  <h5>Bootstrapin kuvakaruselli (Carusel)</h5>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>        
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/katti1.png" alt="Katti mökkirannalla" class="d-block">
+            <div class="carousel-caption">
+                <h3>Katti mökkirannalla...</h3>            
+            </div>          
+        </div>
+
+        <div class="carousel-item">
+            <img src="assets/katti2.png" alt="Katti ja auringonnousu" class="d-block">
+            <div class="carousel-caption">
+                <h3>Katti ja auringonnousu...</h3>
+            </div> 
+        </div>
+
+        <div class="carousel-item">
+            <img src="assets/katti3.png" alt="Täältä tullaan" class="d-block">
+            <div class="carousel-caption">
+                <h3>Täältä tullaan...</h3>
+            </div>  
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" aria-label="Next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+</section>
+
+<!--Taulukko-->
+<section id="taulukko">
+<div class="table-responsive mt-5">
+  <header>
+    <h5>Taulukko (Table)</h5>
+  </header>
+  <table class="table table-bordered">
+    <caption>*) Taulukossa on lueteltu sivustolla käytetyt teknologiat ja niiden tarkoitus.</caption>
+    <thead>
+      <tr>
+        <th>Tekniikka</th>
+        <th>Kuvaus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bootstrap 5</td>
+        <td>Responsiivinen suunnittelu</td>
+      </tr>
+      <tr>
+        <td>HTML5 ja CSS3</td>
+        <td>Sivun rakenne ja visuaalinen tyyli</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Datan käsittely</td>
+      </tr>
+      <tr>
+        <td>OpenWeatherMap API</td>
+        <td>Säädatan haku ulkoiselta palvelimelta</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!--Footer-->
+<div class="footer mt-5 p-2">
+    <p>Digitekniikat - DIG007AS2A-3012</p>
+</div>
+
+<script src="oma.js"></script>
+
+</body>
+</html>
