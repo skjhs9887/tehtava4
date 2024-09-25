@@ -36,8 +36,6 @@ function tehtava4Data(data, elementId) {
     
     tekstit.push("</ul>");
 
-    var kuva = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-    tekstit.push("<img src='" + kuva + "' alt='Säätilan kuva'>");
 
     document.getElementById(elementId).innerHTML = tekstit.join('');
 }
